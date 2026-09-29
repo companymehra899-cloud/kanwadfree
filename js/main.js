@@ -194,6 +194,8 @@ function bindMenu() {
     document.body.classList.toggle("menu-open");
   });
   overlay && overlay.addEventListener("click", close);
+  const navClose = document.querySelector(".nav-close");
+  navClose && navClose.addEventListener("click", close);
   document.querySelectorAll(".has-drop").forEach((item) => {
     const trigger = item.querySelector(":scope > a");
     trigger && trigger.addEventListener("click", (e) => {
@@ -419,8 +421,14 @@ function chrome(root, active) {
         </ul>
       </li>
       <li><a class="${active==="cart"?"active":""}" href="${r}cart.html">Wishlist / Cart</a></li>
-    </ul></div></nav>
+    </ul></div>
+    <button class="nav-close" type="button" aria-label="Close menu">×</button>
+    </nav>
   </header>
+  <form class="search mob-search" action="${r}product.html">
+    <input type="search" placeholder="Search sofa, desk, dining...">
+    <button type="submit">Search</button>
+  </form>
   <div class="nav-overlay"></div>`;
 }
 
