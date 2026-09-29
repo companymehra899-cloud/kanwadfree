@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=m1">
+  <link rel="stylesheet" href="css/style.css?v=e1">
 </head>
 <body data-page="product" data-root="">
   <div id="siteHead"></div>
@@ -21,9 +21,14 @@
     <div class="wrap shop">
       <aside class="filters">
         <h4>Category</h4>
-        <label><input type="checkbox" checked> Home Furniture</label>
-        <label><input type="checkbox" checked> Office Furniture</label>
-        <label><input type="checkbox" checked> Workstation</label>
+        <label><input type="checkbox" class="cat-filter" value="home" checked> Home Furniture</label>
+        <label><input type="checkbox" class="cat-filter" value="office" checked> Office Furniture</label>
+        <label><input type="checkbox" class="cat-filter" value="workstation" checked> Workstation</label>
+        <label><input type="checkbox" class="cat-filter" value="institutional" checked> Institutional</label>
+        <label><input type="checkbox" class="cat-filter" value="patio" checked> Patio Furniture</label>
+        <label><input type="checkbox" class="cat-filter" value="restaurant" checked> Restaurant Furniture</label>
+        <label><input type="checkbox" class="cat-filter" value="lockers" checked> Storage Lockers</label>
+        <label><input type="checkbox" class="cat-filter" value="cabinets" checked> Cabinets &amp; Wardrobes</label>
         <h4>Deliver to</h4>
         <div class="field">
           <input id="pinInput" placeholder="Enter pincode" maxlength="6">
@@ -31,51 +36,10 @@
         <button class="btn btn-red" id="pinApply" type="button">Apply</button>
         <p id="pinOut" class="dim" style="margin-top:8px;font-size:12px;color:var(--mute);"></p>
       </aside>
-      <div class="prod-grid">
-        <a class="pcard" href="product/heritage-lounge-sofa.html">
-          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" alt="Heritage Lounge Sofa">
-          <div class="body">
-            <h3>Heritage Lounge Sofa</h3>
-            <p class="dim">2100x900x850 mm</p>
-            <p class="price">₹48,900 MRP</p>
-            <div class="swatches"><span class="dot coka"></span><span class="dot red"></span><span class="dot gold"></span></div>
-            <span class="btn btn-line" style="width:100%;">View Details</span>
-          </div>
-        </a>
-        <a class="pcard" href="product/executive-office-desk.html">
-          <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=800&q=80" alt="Executive Office Desk">
-          <div class="body">
-            <h3>Executive Office Desk</h3>
-            <p class="dim">1600x800x750 mm</p>
-            <p class="price">₹32,400 MRP</p>
-            <div class="swatches"><span class="dot coka"></span><span class="dot gold"></span></div>
-            <span class="btn btn-line" style="width:100%;">View Details</span>
-          </div>
-        </a>
-        <a class="pcard" href="product/teak-dining-collection.html">
-          <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80" alt="Teak Dining Collection">
-          <div class="body">
-            <h3>Teak Dining Collection</h3>
-            <p class="dim">1800x900x760 mm</p>
-            <p class="price">₹54,200 MRP</p>
-            <div class="swatches"><span class="dot coka"></span><span class="dot gold"></span><span class="dot yellow"></span></div>
-            <span class="btn btn-line" style="width:100%;">View Details</span>
-          </div>
-        </a>
-        <a class="pcard" href="product/modular-workstation.html">
-          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Modular Workstation">
-          <div class="body">
-            <h3>Modular Workstation</h3>
-            <p class="dim">1200x600x750 mm</p>
-            <p class="price">₹18,700 MRP</p>
-            <div class="swatches"><span class="dot coka"></span><span class="dot red"></span></div>
-            <span class="btn btn-line" style="width:100%;">View Details</span>
-          </div>
-        </a>
-      </div>
+      <div class="prod-grid"></div>
     </div>
   </section>
   <div id="siteFoot"></div>
-  <script src="js/main.js?v=m1"></script>
+  <script src="js/main.js?v=e1"></script>
 </body>
 </html>

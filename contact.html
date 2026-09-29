@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=m1">
+  <link rel="stylesheet" href="css/style.css?v=e1">
 </head>
 <body data-page="contact" data-root="">
   <div id="siteHead"></div>
@@ -56,22 +56,18 @@
           <form id="contactForm" style="margin-top:12px;">
             <div class="field">
               <label>Select Product</label>
-              <select>
+              <select id="contactProduct">
                 <option value="">Choose a model (optional)</option>
-                <option>Heritage Lounge Sofa</option>
-                <option>Executive Office Desk</option>
-                <option>Teak Dining Collection</option>
-                <option>Modular Workstation</option>
-                <option>General Enquiry</option>
-                <option>Dealer / Distributorship</option>
+                <option data-static value="General Enquiry">General Enquiry</option>
+                <option data-static value="Dealer / Distributorship">Dealer / Distributorship</option>
               </select>
             </div>
-            <div class="field"><label>Name</label><input required placeholder="Your name"></div>
-            <div class="field"><label>Email</label><input type="email" required placeholder="you@email.com"></div>
-            <div class="field"><label>Phone</label><input type="tel" required placeholder="+91 98111 67816"></div>
-            <div class="field"><label>Message</label><textarea required placeholder="How can we help?"></textarea></div>
+            <div class="field"><label>Name</label><input id="cName" required placeholder="Your name"></div>
+            <div class="field"><label>Email</label><input id="cEmail" type="email" required placeholder="you@email.com"></div>
+            <div class="field"><label>Phone</label><input id="cPhone" type="tel" required placeholder="+91 98111 67816"></div>
+            <div class="field"><label>Message</label><textarea id="cMsg" required placeholder="How can we help?"></textarea></div>
             <p style="font-size:12px;color:var(--mute);margin-bottom:10px;">Total Word Count: <span id="wc">0</span> words.</p>
-            <button class="btn btn-red" type="submit">Submit</button>
+            <button class="btn btn-red" type="submit">Send Enquiry</button>
             <p class="note" id="authNote"></p>
           </form>
         </div>
@@ -101,21 +97,6 @@
     </div>
   </section>
   <div id="siteFoot"></div>
-  <script src="js/main.js?v=m1"></script>
-  <script>
-    var form = document.getElementById("contactForm");
-    var ta = form.querySelector("textarea");
-    var wc = document.getElementById("wc");
-    ta.addEventListener("input", function () {
-      var n = ta.value.trim() ? ta.value.trim().split(/\s+/).length : 0;
-      wc.textContent = n;
-    });
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var n = document.getElementById("authNote");
-      n.textContent = "Thank you. We will contact you at kanwoodinteriors@gmail.com / +91 98111 67816.";
-      n.classList.add("show");
-    });
-  </script>
+  <script src="js/main.js?v=e1"></script>
 </body>
 </html>
