@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>My Account | Kanwood Interiors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="login" data-root="../">
+  <div id="siteHead"></div>
+  <div class="pagehead">
+    <div class="wrap">
+      <div class="crumb"><a href="../index.html">Home</a> / Account</div>
+      <h1>My Account</h1>
+    </div>
+  </div>
+  <section class="sec">
+    <div class="wrap">
+      <div class="auth-box" id="accountBox">
+        <h3 style="margin-bottom:12px;">Welcome, <span id="accName"></span></h3>
+        <ul class="spec">
+          <li>Email: <b id="accEmail"></b></li>
+          <li>Phone: <b id="accPhone"></b></li>
+        </ul>
+        <p style="font-size:13px;color:var(--mute);margin:14px 0;">Saved on this browser. Orders are still confirmed by phone or email.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <a class="btn btn-red" href="../product.html">Shop now</a>
+          <a class="btn btn-line" href="../cart.html">View cart</a>
+          <button class="btn btn-dark" type="button" id="logoutBtn">Logout</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="siteFoot"></div>
+  <script src="../js/main.js"></script>
+</body>
+</html>
